@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="RES_projekat_5.View.ShesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RES_projekat_5.View"
+             xmlns:viewModel="clr-namespace:RES_projekat_5.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF0F2B3F" Offset="0"/>
+                <GradientStop Color="#FF38A0E8" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Label Content="Izvestaji"   HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="44" Margin="131,10,131,0" VerticalAlignment="Top" Width="181" Background="{x:Null}" Foreground="White" FontSize="26" BorderBrush="White" FontFamily="Arial"/>
+
+
+        <Label Content="Cena struje za kupovinu i prodaju: " Height="41" Margin="45,138,446,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="20" BorderBrush="White" FontFamily="Arial"/>
+        <TextBox FontSize="28" IsEnabled="False" TextAlignment="Center" Margin="95,179,515,234.6">7.392 din</TextBox>
+
+        <Label Content="Cena proizvodnje Solarnih panela" Height="29" Margin="488,90,74,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="15" BorderBrush="White" FontFamily="Arial"/>
+        <TextBox x:Name="Solarni_Paneli" Text="{Binding SolarniPaneli}" FontSize="15" IsEnabled="False" TextAlignment="Center" Margin="535,124,140,298.6"></TextBox>
+
+        <Label Content="Cena energije iz Baterije" Height="36" Margin="488,179,74,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="15" BorderBrush="White" FontFamily="Arial"/>
+        <TextBox x:Name="Baterijaa" Text="{Binding Baterija}" FontSize="15" IsEnabled="False" TextAlignment="Center" Margin="535,215,140,207.6"></TextBox>
+
+        <Label Content="Cena energije iz Potrosaca" Height="27" Margin="488,261,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="15" BorderBrush="White" FontFamily="Arial" HorizontalAlignment="Left" Width="238"/>
+        <TextBox x:Name="Potrosacii" Text="{Binding Potrosaci}" FontSize="15" IsEnabled="False" TextAlignment="Center" Margin="535,293,140,131.6"></TextBox>
+
+        <Label Content="Cena energije elektrodistribucije" Height="37" Margin="363,355,199,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="15" BorderBrush="White" FontFamily="Arial" RenderTransformOrigin="0.132,0.343"/>
+        <TextBox x:Name="Elektrodistribucijaa1" Text="{Binding Elektrodistribucija1}" FontSize="15" IsEnabled="False" TextAlignment="Center" Margin="606,355,69,64.6"></TextBox>
+
+        <Label Content="Kupljena ili Prodata: " Height="37" Margin="363,392,294,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="15" BorderBrush="White" FontFamily="Arial"/>
+        <TextBox x:Name="Elektrodistribucijaa2" Text="{Binding Elektrodistribucija2}" FontSize="15" IsEnabled="False" TextAlignment="Center" Margin="606,399,69,20.6"></TextBox>
+
+        <Label Content="Izaberite datum: " Height="37" Margin="95,291,563,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="15" BorderBrush="White" FontFamily="Arial"/>
+        <DatePicker SelectedDate="{Binding Datum}" FontSize="20" Margin="95,333,515,70.6"></DatePicker>
+        <Button Click="Button_Click" Margin="95,384,563,37.6" FontSize="20"> Potvrdi</Button>
+        
+    </Grid>
+</UserControl>

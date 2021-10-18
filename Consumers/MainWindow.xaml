@@ -1,0 +1,38 @@
+﻿<Window x:Class="Consumers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Consumers"
+        xmlns:data="clr-namespace:Consumers.Model"
+        xmlns:viewModel="clr-namespace:Consumers.ViewModel"
+        xmlns:views="clr-namespace:Consumers.View"
+        mc:Ignorable="d"
+        Title="Consumers" Height="320" Width="457">
+
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+
+        <DataTemplate  DataType="{x:Type viewModel:PotrosacViewModel}">
+            <views:PotrosacView Height="300" Width="450"/>
+        </DataTemplate>
+
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <ContentControl Content="{Binding CurrentViewModel}"/>
+        </Grid>
+
+    </Grid>
+
+</Window>

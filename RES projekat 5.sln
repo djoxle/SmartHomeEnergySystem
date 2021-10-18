@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHES", "RES projekat 5\SHES.csproj", "{933C0BEB-DCED-465D-B833-282064C468D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SHES folder", "SHES folder", "{290575E9-1EF1-4C84-A153-64050743D67B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Battery folder", "Battery folder", "{75EE202C-A5C7-40F6-9CF4-47B06B0BF63C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battery", "Battery\Battery.csproj", "{B03871AF-6E10-492F-81B2-B59F3D6192A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solar panel(s) folder", "Solar panel(s) folder", "{8AD6B5BB-CDAC-4FE3-A90E-E8726B88802A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solar panel(s)", "Solar panel(s)\Solar panel(s).csproj", "{2726BDBF-2A0B-4EC5-864E-D5F476522FC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consumers folder", "Consumers folder", "{DC1544F9-A204-4B2D-8D45-D901E4140D76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumers", "Consumers\Consumers.csproj", "{0BD62963-2448-40AF-A384-71E5848A7856}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utility folder", "Utility folder", "{8F6EB1BB-4924-4367-899C-CFBF87CF6E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{21CEE88A-0D99-4CDB-B4DB-4A120263779B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PomocneKlase", "PomocneKlase", "{96A3913F-4567-48C4-B51E-1D4EED666420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomocnaBiblioteka", "PomocnaBiblioteka\PomocnaBiblioteka.csproj", "{FAF216AC-99E5-4ED9-AF40-C5B2F8B1FAF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{7DB63ADA-10AD-4AE0-88B7-29234671AB4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{70E0346C-6659-40EE-BE35-58E4756F7081}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{933C0BEB-DCED-465D-B833-282064C468D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933C0BEB-DCED-465D-B833-282064C468D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933C0BEB-DCED-465D-B833-282064C468D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933C0BEB-DCED-465D-B833-282064C468D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B03871AF-6E10-492F-81B2-B59F3D6192A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03871AF-6E10-492F-81B2-B59F3D6192A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03871AF-6E10-492F-81B2-B59F3D6192A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03871AF-6E10-492F-81B2-B59F3D6192A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2726BDBF-2A0B-4EC5-864E-D5F476522FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2726BDBF-2A0B-4EC5-864E-D5F476522FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2726BDBF-2A0B-4EC5-864E-D5F476522FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2726BDBF-2A0B-4EC5-864E-D5F476522FC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BD62963-2448-40AF-A384-71E5848A7856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD62963-2448-40AF-A384-71E5848A7856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD62963-2448-40AF-A384-71E5848A7856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD62963-2448-40AF-A384-71E5848A7856}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CEE88A-0D99-4CDB-B4DB-4A120263779B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CEE88A-0D99-4CDB-B4DB-4A120263779B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CEE88A-0D99-4CDB-B4DB-4A120263779B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CEE88A-0D99-4CDB-B4DB-4A120263779B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF216AC-99E5-4ED9-AF40-C5B2F8B1FAF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF216AC-99E5-4ED9-AF40-C5B2F8B1FAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF216AC-99E5-4ED9-AF40-C5B2F8B1FAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF216AC-99E5-4ED9-AF40-C5B2F8B1FAF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E0346C-6659-40EE-BE35-58E4756F7081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E0346C-6659-40EE-BE35-58E4756F7081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E0346C-6659-40EE-BE35-58E4756F7081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E0346C-6659-40EE-BE35-58E4756F7081}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{933C0BEB-DCED-465D-B833-282064C468D9} = {290575E9-1EF1-4C84-A153-64050743D67B}
+		{B03871AF-6E10-492F-81B2-B59F3D6192A6} = {75EE202C-A5C7-40F6-9CF4-47B06B0BF63C}
+		{2726BDBF-2A0B-4EC5-864E-D5F476522FC9} = {8AD6B5BB-CDAC-4FE3-A90E-E8726B88802A}
+		{0BD62963-2448-40AF-A384-71E5848A7856} = {DC1544F9-A204-4B2D-8D45-D901E4140D76}
+		{21CEE88A-0D99-4CDB-B4DB-4A120263779B} = {8F6EB1BB-4924-4367-899C-CFBF87CF6E25}
+		{FAF216AC-99E5-4ED9-AF40-C5B2F8B1FAF1} = {96A3913F-4567-48C4-B51E-1D4EED666420}
+		{70E0346C-6659-40EE-BE35-58E4756F7081} = {7DB63ADA-10AD-4AE0-88B7-29234671AB4E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB3D21E3-A217-45D7-A8EE-2A2A1AB8E684}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+﻿<Window x:Class="Solar_panel_s_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Solar_panel_s_"
+        xmlns:data="clr-namespace:Solar_panel_s_.Model"
+        xmlns:viewModel="clr-namespace:Solar_panel_s_.ViewModel"
+        xmlns:views="clr-namespace:Solar_panel_s_.View"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        mc:Ignorable="d"
+        Title="Solar panell" Height="320" Width="457">
+
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+
+        <DataTemplate  DataType="{x:Type viewModel:SolarniPaneliViewModel}">
+            <views:SolarniPaneliView Height="300" Width="450"/>
+        </DataTemplate>
+        
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <ContentControl Content="{Binding CurrentViewModel}"/>
+        </Grid>
+
+    </Grid>
+
+</Window>

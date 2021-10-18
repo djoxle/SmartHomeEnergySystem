@@ -1,0 +1,49 @@
+﻿<Window x:Class="Battery.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Battery"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="410" Visibility="Visible">
+
+    <Grid Margin="0,0,0,0">
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF0F2B3F" Offset="0"/>
+                <GradientStop Color="#FF38A0E8" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Label Content="Baterija"   HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="44" Margin="131,10,131,0" VerticalAlignment="Top" Width="181" Background="{x:Null}" Foreground="White" FontSize="26" BorderBrush="White" FontFamily="Arial"/>
+
+        <Image Width="100" Source="battery.png" Margin="10,10,294.8,155"/>
+        <Image Width="100" Source="battery.png" Margin="293,10,11.8,155"/>
+
+        <DockPanel Margin="0,0,-0.4,10.2">
+            <StackPanel  Margin="10,0,0,0" DockPanel.Dock="Bottom" Orientation="Vertical" Height="88">
+                
+                <DataGrid Margin="0,7,0,0" x:Name="dataGridKosarkasi" ItemsSource="{Binding Baterije}"   ColumnHeaderHeight="30"  BorderBrush="Black" BorderThickness="2" RowBackground="AliceBlue" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True" Height="87" VerticalAlignment="Top" FontSize="12" >
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn  Header="ID"  Binding="{Binding ID}" Width="50"  />
+
+                        <DataGridTextColumn Header="Ime Baterije" Binding="{Binding Ime}" Width="100"/>
+
+                        <DataGridTextColumn Header="Maksimalna Snaga" Binding="{Binding MaksimalnaSnaga}" Width="130"/>
+
+                        <DataGridTextColumn Header="Kapacitet" Binding="{Binding Kapacitet}" Width="*"/>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+
+
+            </StackPanel>
+
+        </DockPanel>
+
+    </Grid>
+
+
+</Window>
